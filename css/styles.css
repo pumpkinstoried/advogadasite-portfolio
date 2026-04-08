@@ -1,0 +1,145 @@
+/* css/style.css */
+
+:root {
+    /* Paleta Jurídica Premium */
+    --color-primary: #1A2B4C; /* Azul Marinho Profundo */
+    --color-primary-light: #2C4270;
+    --color-accent: #C5A47E; /* Dourado Sóbrio */
+    --color-accent-hover: #A88965;
+    --color-bg-light: #F9F8F6; /* Off-white / Nude */
+    --color-text-main: #2D3748; /* Cinza escuro para melhor legibilidade */
+}
+
+/* Personalização da seleção de texto pelo usuário */
+::selection {
+    background-color: var(--color-accent);
+    color: #ffffff;
+}
+
+/* Ajustes gerais complementares ao Tailwind */
+body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-main);
+    overflow-x: hidden; /* Previne quebra de layout no mobile */
+}
+
+/* Classe utilitária para o efeito Glassmorphism (será usada na Navbar) */
+.glass-effect {
+    background: rgba(249, 248, 246, 0.85); /* Fundo acompanhando o off-white */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(197, 164, 126, 0.2); /* Borda sutil dourada */
+}
+
+/* Suavização geral para botões e links */
+.transition-custom {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hero section styling */
+#inicio {
+    background: linear-gradient(135deg, #0b1732 0%, #11274c 42%, #1a2b4c 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(197, 164, 126, 0.20), transparent 24%),
+                radial-gradient(circle at 20% 70%, rgba(255, 255, 255, 0.08), transparent 18%);
+    pointer-events: none;
+}
+
+#inicio .text-center h1,
+#inicio .lg\:text-left h1 {
+    font-size: clamp(3.1rem, 5vw, 5rem);
+    letter-spacing: -0.04em;
+    line-height: 1.03;
+    text-shadow: 0 24px 45px rgba(0, 0, 0, 0.35);
+}
+
+#inicio p {
+    color: #d8dfe9;
+    font-size: 1.15rem;
+    letter-spacing: 0.01em;
+    max-width: 42rem;
+}
+
+#inicio .inline-flex.items-center.gap-2 {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.28);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+#inicio .flex .group span {
+    display: none !important;
+}
+
+#inicio .flex .group a:first-child {
+    background: #f4e7c0;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 22px 48px rgba(197, 164, 126, 0.18);
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+#inicio .flex .group a:first-child:hover {
+    background: #e6d29b;
+}
+
+#inicio .flex > a {
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #f8fafc;
+}
+
+#inicio .flex > a:hover {
+    color: var(--color-accent);
+}
+
+#inicio .grid .relative {
+    position: relative;
+    padding: 1.25rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+#inicio img {
+    border-radius: 1.5rem;
+    box-shadow: 0 40px 90px rgba(8, 18, 39, 0.45);
+}
+
+@media (max-width: 1024px) {
+    #inicio .grid .relative::before {
+        inset: -0.8rem;
+    }
+}
+
+/* Animação do FAQ */
+.faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+details[open] .faq-content {
+    grid-template-rows: 1fr;
+}
+
+.faq-content-inner {
+    overflow: hidden;
+}
+
+/* Ajuste sutil na transição da seta */
+details summary span i {
+    transition: transform 0.3s ease;
+}
+
+details[open] summary span i {
+    transform: rotate(180deg);
+}

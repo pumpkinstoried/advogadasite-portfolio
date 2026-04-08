@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dra. Nome Sobrenome | Advocacia Estratégica e Consultoria</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+    <meta name="description"
+        content="Atendimento jurídico especializado com foco em resultados, sigilo absoluto e ética. Agende sua consulta online ou presencial.">
+    <meta name="author" content="Dra. Nome Sobrenome">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dra. Nome Sobrenome | Advocacia de Alta Performance">
+    <meta property="og:description"
+        content="Soluções jurídicas seguras e ágeis para o seu caso. Clique para iniciar um atendimento.">
+    <meta property="og:image" content="https://seusite.com.br/img/og-preview.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+    <header class="fixed top-0 w-full z-50 glass-effect transition-custom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl font-bold text-[#1A2B4C] tracking-tight">
+                        Dra. Nome Sobrenome
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#atuacao"
+                        class="text-sm font-medium text-gray-700 hover:text-[#C5A47E] transition-custom">Áreas de
+                        Atuação</a>
+                    <a href="#sobre"
+                        class="text-sm font-medium text-gray-700 hover:text-[#C5A47E] transition-custom">Sobre Mim</a>
+                    <a href="#diferenciais"
+                        class="text-sm font-medium text-gray-700 hover:text-[#C5A47E] transition-custom">Diferenciais</a>
+
+                    <a href="#contato"
+                        class="flex items-center gap-2 bg-[#1A2B4C] hover:bg-[#2C4270] text-white px-5 py-2.5 rounded-sm text-sm font-semibold transition-custom shadow-md">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        Agendar Consulta
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn"
+                        class="text-[#1A2B4C] hover:text-[#C5A47E] focus:outline-none transition-custom">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-[#F9F8F6]/95 backdrop-blur-md border-b border-[#C5A47E]/20 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#atuacao"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-[#C5A47E]">Áreas de
+                    Atuação</a>
+                <a href="#sobre" class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-[#C5A47E]">Sobre
+                    Mim</a>
+                <a href="#diferenciais"
+                    class="block px-3 py-3 text-base font-medium text-gray-800 hover:text-[#C5A47E]">Diferenciais</a>
+                <a href="#contato"
+                    class="relative z-10 flex items-center justify-center gap-2 bg-[#C5A47E] hover:bg-[#A88965] text-white px-8 py-4 rounded-sm text-base font-bold transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Falar com a Advogada
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="pt-20"></div>
+    <section id="inicio" class="relative bg-[#1A2B4C] text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-[#C5A47E] blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <div class="text-center lg:text-left" data-aos="fade-up">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#C5A47E] text-sm font-medium mb-6">
+                        <i data-lucide="scale" class="w-4 h-4"></i>
+                        <span>Excelência e Ética Profissional</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
+                        Advocacia Estratégica para Resultados Reais
+                    </h1>
+
+                    <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Atendimento humanizado, pautado no sigilo absoluto e na construção de defesas sólidas para
+                        resolver o seu problema jurídico com a agilidade que você precisa.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <div class="relative group inline-block">
+                            <span
+                                class="absolute inset-0 w-full h-full rounded-sm bg-[#C5A47E] opacity-40 animate-ping group-hover:hidden"></span>
+
+                            <a href="#contato"
+                                class="relative z-10 flex items-center justify-center gap-2 bg-[#C5A47E] hover:bg-[#A88965] text-white px-8 py-4 rounded-sm text-base font-bold transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                <i data-lucide="message-square" class="w-5 h-5"></i>
+                                Falar com a Advogada
+                            </a>
+                        </div>
+
+                        <a href="#sobre"
+                            class="inline-flex items-center justify-center gap-2 bg-transparent border border-gray-400 hover:border-[#C5A47E] text-white hover:text-[#C5A47E] px-8 py-4 rounded-sm text-base font-medium transition-custom">
+                            Conhecer o Escritório
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block relative mt-8 lg:mt-0" data-aos="fade-left">
+                    <div
+                        class="absolute inset-0 border-2 border-[#C5A47E] rounded-sm transform translate-x-5 translate-y-5">
+                    </div>
+
+                    <img src="https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Advogada Especialista"
+                        class="relative z-10 w-full h-[550px] object-cover rounded-sm shadow-2xl brightness-95">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 lg:py-28 bg-[#F9F8F6]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <div class="relative" data-aos="fade-right">
+                    <div
+                        class="absolute -inset-4 border-2 border-[#C5A47E] rounded-sm transform -translate-x-2 -translate-y-2 hidden md:block">
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Dra. Nome Sobrenome - Advogada Especialista"
+                        class="relative z-10 w-full h-[500px] md:h-[600px] object-cover rounded-sm shadow-xl grayscale-[15%]">
+
+                    <div
+                        class="absolute -bottom-6 -right-2 md:-right-6 z-20 bg-[#1A2B4C] text-white p-5 md:p-6 rounded-sm shadow-xl">
+                        <p class="font-serif text-3xl md:text-4xl font-bold text-[#C5A47E] mb-1">+10</p>
+                        <p class="text-xs md:text-sm font-medium uppercase tracking-wider">Anos de<br>Experiência</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <h2 class="text-[#C5A47E] font-semibold tracking-wider uppercase text-sm mb-3">Sobre a Profissional
+                    </h2>
+                    <h3 class="font-serif text-3xl md:text-4xl font-bold text-[#1A2B4C] mb-2">
+                        Dra. Nome Sobrenome
+                    </h3>
+
+                    <p class="text-sm text-gray-500 font-bold mb-6 uppercase tracking-wider">OAB/UF 123.456</p>
+
+                    <div class="w-20 h-1 bg-[#1A2B4C] mb-8"></div>
+
+                    <div class="space-y-6 text-gray-600 text-lg leading-relaxed mb-10">
+                        <p>
+                            Com uma trajetória pautada pela ética e transparência, dedico minha carreira a oferecer
+                            soluções jurídicas estratégicas e seguras para meus clientes. Entendo que por trás de cada
+                            processo existe uma história e um patrimônio que merecem respeito.
+                        </p>
+                        <p>
+                            Meu compromisso é proporcionar um atendimento humanizado e artesanal, traduzindo o
+                            "juridiquês" de forma clara e mantendo você informado em cada etapa da sua demanda.
+                        </p>
+                    </div>
+
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <div
+                                class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center flex-shrink-0 mr-4 border border-gray-100">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-[#C5A47E]"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#1A2B4C]">Especialista em Direito Processual Civil</h5>
+                                <p class="text-gray-500 text-sm">Universidade de Excelência Acadêmica</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div
+                                class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center flex-shrink-0 mr-4 border border-gray-100">
+                                <i data-lucide="award" class="w-5 h-5 text-[#C5A47E]"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#1A2B4C]">Membro da Comissão de Ética</h5>
+                                <p class="text-gray-500 text-sm">Ordem dos Advogados do Brasil (Seccional)</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="atuacao" class="py-24 lg:py-32 bg-white overflow-hidden relative">
+        <div class="absolute top-20 -right-20 pointer-events-none opacity-[0.03] select-none">
+            <h2 class="font-serif text-[15rem] leading-none uppercase">Expertise</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20" data-aos="fade-up">
+                <div class="max-w-2xl">
+                    <h2 class="text-[#C5A47E] font-semibold tracking-widest uppercase text-sm mb-4">Especialidades</h2>
+                    <h3 class="font-serif text-4xl md:text-5xl font-bold text-[#1A2B4C] leading-tight">
+                        Soluções Jurídicas sob Medida
+                    </h3>
+                </div>
+                <div class="lg:max-w-md pb-2 border-l-2 border-[#C5A47E] pl-6">
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Foco na resolução eficiente de conflitos com atendimento personalizado, resguardando seus
+                        direitos com o máximo rigor técnico e ético.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-6">
+
+                <div class="col-span-12 lg:col-span-8 group relative" data-aos="fade-right">
+                    <div
+                        class="h-full bg-[#1A2B4C] rounded-sm p-10 flex flex-col md:flex-row gap-8 items-center overflow-hidden transition-all duration-500 hover:shadow-2xl border border-white/10">
+                        <span class="absolute -bottom-10 -right-5 font-serif text-[12rem] text-white/5 italic">01</span>
+
+                        <div
+                            class="w-20 h-20 bg-[#C5A47E] text-[#1A2B4C] rounded-sm flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-500">
+                            <i data-lucide="scale" class="w-10 h-10"></i>
+                        </div>
+
+                        <div class="relative z-10">
+                            <h4 class="font-serif text-2xl font-bold text-white mb-4">Direito Civil</h4>
+                            <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+                                Proteção ao patrimônio, contratos, responsabilidade civil, indenizações e defesas em
+                                litígios complexos.
+                            </p>
+                            <a href="#contato"
+                                class="inline-flex items-center text-[#C5A47E] font-bold hover:gap-3 transition-all">
+                                Consultar Especialista <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 group" data-aos="fade-left" data-aos-delay="200">
+                    <div
+                        class="h-full bg-gray-50 border border-gray-100 rounded-sm p-10 flex flex-col justify-between transition-all duration-500 hover:bg-white hover:shadow-xl relative overflow-hidden">
+                        <div class="mb-12">
+                            <div class="w-14 h-1 px-0 bg-[#C5A47E] mb-6"></div>
+                            <i data-lucide="users" class="w-10 h-10 text-[#1A2B4C] mb-6 block"></i>
+                            <h4 class="font-serif text-2xl font-bold text-[#1A2B4C] mb-4">Família e Sucessões</h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                Divórcios, guarda, pensão, inventários e planejamento sucessório com discrição e
+                                sensibilidade.
+                            </p>
+                        </div>
+                        <a href="#contato"
+                            class="w-12 h-12 bg-[#1A2B4C] text-white rounded-full flex items-center justify-center group-hover:bg-[#C5A47E] transition-colors self-end shadow-md">
+                            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-12 group" data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="bg-white border-2 border-gray-100 rounded-sm p-10 flex flex-col lg:flex-row justify-between items-center gap-8 transition-all duration-500 hover:border-[#C5A47E]/30 hover:shadow-2xl">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div
+                                class="w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center border border-gray-100 text-[#1A2B4C] group-hover:text-[#C5A47E] transition-colors">
+                                <i data-lucide="briefcase" class="w-8 h-8"></i>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <h4 class="font-serif text-2xl font-bold text-[#1A2B4C] mb-2">Direito Empresarial</h4>
+                                <p class="text-gray-600 max-w-xl">
+                                    Assessoria preventiva para empresas, estruturação societária, compliance e blindagem
+                                    jurídica de negócios.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <a href="#contato"
+                                class="bg-transparent border border-[#1A2B4C] text-[#1A2B4C] px-8 py-3 rounded-sm font-bold hover:bg-[#1A2B4C] hover:text-white transition-all uppercase text-xs tracking-widest">
+                                Agendar Análise
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="avaliacoes" class="py-24 lg:py-32 bg-[#1A2B4C] relative overflow-hidden">
+
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#C5A47E]/10 blur-[120px] rounded-full">
+            </div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#C5A47E]/10 blur-[120px] rounded-full">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+                <h2 class="text-[#C5A47E] font-semibold tracking-[0.2em] uppercase text-xs mb-4">Reconhecimento &
+                    Confiança</h2>
+                <h3 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">
+                    O que dizem sobre<br>nosso atendimento
+                </h3>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-[#C5A47E] to-transparent mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+
+                <div class="lg:-mt-8" data-aos="fade-up" data-aos-delay="0">
+                    <div
+                        class="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-10 rounded-sm relative group hover:bg-white/[0.06] transition-all duration-500 hover:-translate-y-2">
+                        <span
+                            class="absolute top-6 right-8 font-serif text-8xl text-[#C5A47E]/10 group-hover:text-[#C5A47E]/20 transition-colors">“</span>
+
+                        <div class="flex items-center gap-1 mb-6">
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                        </div>
+
+                        <p class="text-gray-300 italic text-lg leading-relaxed mb-8 relative z-10">
+                            "Profissional extremamente atenciosa. Conseguiu me explicar todos os detalhes do processo
+                            sem usar termos complicados. Me senti segura desde a primeira consulta."
+                        </p>
+
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                            <div
+                                class="w-12 h-12 rounded-full border border-[#C5A47E]/30 flex items-center justify-center text-[#C5A47E] font-bold text-sm bg-[#C5A47E]/5">
+                                M.S.
+                            </div>
+                            <div>
+                                <p class="font-bold text-white text-sm tracking-wide">M.S.</p>
+                                <p class="text-xs text-[#C5A47E] uppercase font-medium">Cliente de Consultoria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="bg-white/[0.05] backdrop-blur-xl border border-[#C5A47E]/20 p-10 rounded-sm relative group hover:bg-white/[0.08] transition-all duration-500 hover:-translate-y-2 shadow-2xl">
+                        <span
+                            class="absolute top-6 right-8 font-serif text-8xl text-[#C5A47E]/10 group-hover:text-[#C5A47E]/20 transition-colors">“</span>
+
+                        <div class="flex items-center gap-1 mb-6">
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                        </div>
+
+                        <p class="text-white italic text-xl leading-relaxed mb-8 relative z-10 font-medium">
+                            "Agilidade e transparência foram os pontos altos. A equipe me manteve informado sobre cada
+                            andamento sem que eu precisasse ficar perguntando. Recomendo de olhos fechados."
+                        </p>
+
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                            <div
+                                class="w-12 h-12 rounded-full border border-[#C5A47E]/30 flex items-center justify-center text-[#C5A47E] font-bold text-sm bg-[#C5A47E]/10 shadow-[0_0_15px_rgba(197,164,126,0.2)]">
+                                R.F.
+                            </div>
+                            <div>
+                                <p class="font-bold text-white text-sm tracking-wide">R.F.</p>
+                                <p class="text-xs text-[#C5A47E] uppercase font-medium">Cliente de Empresa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:mt-8" data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-10 rounded-sm relative group hover:bg-white/[0.06] transition-all duration-500 hover:-translate-y-2">
+                        <span
+                            class="absolute top-6 right-8 font-serif text-8xl text-[#C5A47E]/10 group-hover:text-[#C5A47E]/20 transition-colors">“</span>
+
+                        <div class="flex items-center gap-1 mb-6">
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-[#C5A47E] fill-[#C5A47E]"></i>
+                        </div>
+
+                        <p class="text-gray-300 italic text-lg leading-relaxed mb-8 relative z-10">
+                            "Estava passando por um momento familiar muito delicado e fui acolhida com muito respeito e
+                            humanidade. A condução do caso foi impecável e muito ética."
+                        </p>
+
+                        <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                            <div
+                                class="w-12 h-12 rounded-full border border-[#C5A47E]/30 flex items-center justify-center text-[#C5A47E] font-bold text-sm bg-[#C5A47E]/5">
+                                A.C.
+                            </div>
+                            <div>
+                                <p class="font-bold text-white text-sm tracking-wide">A.C.</p>
+                                <p class="text-xs text-[#C5A47E] uppercase font-medium">Cliente de Família</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="py-16 bg-[#1A2B4C] text-white border-y border-[#C5A47E]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+
+                <div data-aos="fade-up" data-aos-delay="0">
+                    <div
+                        class="mx-auto w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-5 border border-white/10 transition-custom hover:bg-white/10 hover:border-[#C5A47E]/50">
+                        <i data-lucide="users" class="w-7 h-7 text-[#C5A47E]"></i>
+                    </div>
+                    <h4 class="font-serif text-lg font-bold mb-2">Atendimento Humanizado</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                        Escuta ativa e acolhimento em momentos delicados, tratando seu caso com máxima empatia.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="mx-auto w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-5 border border-white/10 transition-custom hover:bg-white/10 hover:border-[#C5A47E]/50">
+                        <i data-lucide="lock" class="w-7 h-7 text-[#C5A47E]"></i>
+                    </div>
+                    <h4 class="font-serif text-lg font-bold mb-2">Sigilo Absoluto</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                        Garantia de confidencialidade total e proteção rigorosa da sua privacidade e dos seus dados.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="mx-auto w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-5 border border-white/10 transition-custom hover:bg-white/10 hover:border-[#C5A47E]/50">
+                        <i data-lucide="zap" class="w-7 h-7 text-[#C5A47E]"></i>
+                    </div>
+                    <h4 class="font-serif text-lg font-bold mb-2">Agilidade Processual</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                        Foco na resolução rápida e eficiente do conflito, evitando desgastes desnecessários.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="mx-auto w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-5 border border-white/10 transition-custom hover:bg-white/10 hover:border-[#C5A47E]/50">
+                        <i data-lucide="crosshair" class="w-7 h-7 text-[#C5A47E]"></i>
+                    </div>
+                    <h4 class="font-serif text-lg font-bold mb-2">Estratégia Personalizada</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                        Análise artesanal e minuciosa para construir a tese de defesa mais sólida e assertiva.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 lg:py-32 bg-[#F9F8F6] relative overflow-hidden">
+    
+    <div class="absolute -bottom-10 -left-10 pointer-events-none opacity-[0.03] select-none hidden lg:block">
+        <h2 class="font-serif text-[12rem] leading-none uppercase">Dúvidas</h2>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-20" data-aos="fade-up">
+            <div class="inline-block px-4 py-1.5 mb-4 border border-[#C5A47E]/30 rounded-full">
+                <span class="text-[#C5A47E] font-semibold tracking-widest uppercase text-[10px]">Suporte Jurídico</span>
+            </div>
+            <h3 class="font-serif text-4xl md:text-5xl font-bold text-[#1A2B4C] mb-6">
+                Perguntas Frequentes
+            </h3>
+            <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto font-light">
+                Esclarecimentos rápidos sobre nossa forma de trabalho e o compromisso com sua segurança jurídica.
+            </p>
+        </div>
+
+        <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+
+            <details class="group bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-l-[#C5A47E] overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-7 cursor-pointer list-none">
+                    <div class="flex items-center gap-5">
+                        <span class="w-10 h-10 rounded-full bg-[#1A2B4C]/5 flex items-center justify-center text-[#1A2B4C] group-open:bg-[#C5A47E] group-open:text-white transition-all duration-300">
+                            <i data-lucide="help-circle" class="w-5 h-5"></i>
+                        </span>
+                        <span class="text-[#1A2B4C] font-bold text-lg md:text-xl tracking-tight group-open:text-[#C5A47E] transition-colors">
+                            Como funciona a primeira consulta?
+                        </span>
+                    </div>
+                    <div class="text-[#C5A47E] transition-transform duration-500 group-open:rotate-180">
+                        <i data-lucide="plus" class="w-6 h-6 group-open:hidden"></i>
+                        <i data-lucide="minus" class="w-6 h-6 hidden group-open:block"></i>
+                    </div>
+                </summary>
+                <div class="px-7 pb-8 pt-2 text-gray-600 leading-relaxed text-lg border-t border-gray-50 ml-14">
+                    A primeira consulta é essencial para entendermos a fundo o seu caso, analisarmos os documentos iniciais e traçarmos as possíveis estratégias jurídicas. É um momento de escuta ativa, diagnóstico preciso e alinhamento de expectativas.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-l-[#C5A47E] overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-7 cursor-pointer list-none">
+                    <div class="flex items-center gap-5">
+                        <span class="w-10 h-10 rounded-full bg-[#1A2B4C]/5 flex items-center justify-center text-[#1A2B4C] group-open:bg-[#C5A47E] group-open:text-white transition-all duration-300">
+                            <i data-lucide="globe" class="w-5 h-5"></i>
+                        </span>
+                        <span class="text-[#1A2B4C] font-bold text-lg md:text-xl tracking-tight group-open:text-[#C5A47E] transition-colors">
+                            O escritório realiza atendimentos online?
+                        </span>
+                    </div>
+                    <div class="text-[#C5A47E] transition-transform duration-500 group-open:rotate-180">
+                        <i data-lucide="plus" class="w-6 h-6 group-open:hidden"></i>
+                        <i data-lucide="minus" class="w-6 h-6 hidden group-open:block"></i>
+                    </div>
+                </summary>
+                <div class="px-7 pb-8 pt-2 text-gray-600 leading-relaxed text-lg border-t border-gray-50 ml-14">
+                    Sim, realizamos atendimentos 100% digitais para clientes de todo o país, utilizando plataformas seguras de videoconferência. Isso garante agilidade e conforto, mantendo o mesmo padrão de acolhimento e o sigilo absoluto do atendimento presencial.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-l-[#C5A47E] overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-7 cursor-pointer list-none">
+                    <div class="flex items-center gap-5">
+                        <span class="w-10 h-10 rounded-full bg-[#1A2B4C]/5 flex items-center justify-center text-[#1A2B4C] group-open:bg-[#C5A47E] group-open:text-white transition-all duration-300">
+                            <i data-lucide="bell" class="w-5 h-5"></i>
+                        </span>
+                        <span class="text-[#1A2B4C] font-bold text-lg md:text-xl tracking-tight group-open:text-[#C5A47E] transition-colors">
+                            Como serei informado sobre o andamento processual?
+                        </span>
+                    </div>
+                    <div class="text-[#C5A47E] transition-transform duration-500 group-open:rotate-180">
+                        <i data-lucide="plus" class="w-6 h-6 group-open:hidden"></i>
+                        <i data-lucide="minus" class="w-6 h-6 hidden group-open:block"></i>
+                    </div>
+                </summary>
+                <div class="px-7 pb-8 pt-2 text-gray-600 leading-relaxed text-lg border-t border-gray-50 ml-14">
+                    Nosso compromisso primário é com a transparência. Você receberá atualizações proativas sempre que houver movimentações processuais relevantes. Além disso, disponibilizamos um canal direto de comunicação para sanar dúvidas sempre que necessário.
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 border-l-4 border-l-[#C5A47E] overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-7 cursor-pointer list-none">
+                    <div class="flex items-center gap-5">
+                        <span class="w-10 h-10 rounded-full bg-[#1A2B4C]/5 flex items-center justify-center text-[#1A2B4C] group-open:bg-[#C5A47E] group-open:text-white transition-all duration-300">
+                            <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+                        </span>
+                        <span class="text-[#1A2B4C] font-bold text-lg md:text-xl tracking-tight group-open:text-[#C5A47E] transition-colors">
+                            Quanto custa contratar os serviços do escritório?
+                        </span>
+                    </div>
+                    <div class="text-[#C5A47E] transition-transform duration-500 group-open:rotate-180">
+                        <i data-lucide="plus" class="w-6 h-6 group-open:hidden"></i>
+                        <i data-lucide="minus" class="w-6 h-6 hidden group-open:block"></i>
+                    </div>
+                </summary>
+                <div class="px-7 pb-8 pt-2 text-gray-600 leading-relaxed text-lg border-t border-gray-50 ml-14">
+                    Os honorários advocatícios são orçados de forma personalizada após a análise do caso concreto durante a consulta inicial. O escritório segue rigorosamente a tabela de honorários estipulada pela OAB, garantindo cobranças éticas e justas.
+                </div>
+            </details>
+
+        </div>
+
+        <div class="mt-16 text-center" data-aos="fade-up">
+            <p class="text-gray-500 text-sm mb-4">Ainda tem alguma dúvida específica sobre o seu caso?</p>
+            <a href="#contato" class="inline-flex items-center gap-2 text-[#1A2B4C] font-bold hover:text-[#C5A47E] transition-colors group">
+                Fale diretamente conosco <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <section id="contato" class="py-20 lg:py-28 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <div data-aos="fade-right">
+                    <h2 class="text-[#C5A47E] font-semibold tracking-wider uppercase text-sm mb-3">Atendimento</h2>
+                    <h3 class="font-serif text-3xl md:text-4xl font-bold text-[#1A2B4C] mb-6">
+                        Agende sua Consulta
+                    </h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Oferecemos atendimento presencial em nosso escritório ou consultas 100% digitais por
+                        videoconferência para clientes de todo o Brasil.
+                    </p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-[#C5A47E] mt-1 mr-4 flex-shrink-0"></i>
+                            <div>
+                                <h5 class="font-bold text-[#1A2B4C]">Endereço Físico</h5>
+                                <p class="text-gray-600">Av. Empresarial, 1000 - Sala 402<br>Edifício Premium, Centro -
+                                    Cidade/UF</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i data-lucide="clock" class="w-6 h-6 text-[#C5A47E] mt-1 mr-4 flex-shrink-0"></i>
+                            <div>
+                                <h5 class="font-bold text-[#1A2B4C]">Horário de Funcionamento</h5>
+                                <p class="text-gray-600">Segunda a Sexta: 09h às 18h<br><span
+                                        class="text-sm text-gray-500">Atendimento presencial mediante agendamento
+                                        prévio.</span></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i data-lucide="mail" class="w-6 h-6 text-[#C5A47E] mt-1 mr-4 flex-shrink-0"></i>
+                            <div>
+                                <h5 class="font-bold text-[#1A2B4C]">E-mail Institucional</h5>
+                                <p class="text-gray-600">contato@advogadanome.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20Dra.%20Gostaria%20de%20agendar%20uma%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica."
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 bg-[#1A2B4C] hover:bg-[#2C4270] text-white px-8 py-4 rounded-sm text-base font-bold transition-custom shadow-lg hover:shadow-xl w-full sm:w-auto">
+                        <i data-lucide="message-square" class="w-5 h-5"></i>
+                        Agendar via WhatsApp
+                    </a>
+                </div>
+
+                <div data-aos="fade-left"
+                    class="relative h-[400px] lg:h-[500px] w-full rounded-sm overflow-hidden shadow-lg border border-gray-200 bg-gray-100 flex items-center justify-center group">
+                    <div class="absolute text-center p-6 text-gray-500 z-0">
+                        <i data-lucide="map" class="w-12 h-12 mx-auto mb-2 opacity-50"></i>
+                        <p class="font-medium">Carregando Mapa...</p>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197368551198!2d-46.65866162387162!3d-23.56133286159676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1711000000000!5m2!1spt-BR!2sbr"
+                        class="absolute inset-0 w-full h-full grayscale-[40%] contrast-[1.1] transition-custom duration-500 group-hover:grayscale-0 z-10"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="fixed bottom-6 right-6 z-50 group">
+        <div class="absolute inset-0 bg-[#25D366] rounded-full opacity-40 animate-ping group-hover:animate-none"></div>
+        <a href="wa.me" class="btn-whatsapp relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl transition-custom transform group-hover:scale-110 group-hover:bg-[#20bd5a]" aria-label="Falar pelo WhatsApp">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.001 5.45-4.436 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .023 5.391 0 12.028c0 2.125.541 4.198 1.582 6.01L0 24l6.117-1.607a11.77 11.77 0 005.912 1.586h.005c6.632 0 12.022-5.391 12.026-12.028a11.795 11.795 0 00-3.483-8.43z"/>
+            </svg>
+            <span class="absolute right-16 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-sm shadow-lg border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap hidden md:block">Precisa de urgência?</span>
+        </a>
+    </div>
+
+    <footer class="bg-[#1A2B4C] text-white pt-16 pb-8 border-t border-[#C5A47E]/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                <div class="col-span-1 lg:col-span-1">
+                    <h4 class="font-serif text-xl font-bold mb-4">Dra. Nome Sobrenome</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Advocacia estratégica com foco em resultados éticos e atendimento humanizado.
+                    </p>
+                    <p class="text-[#C5A47E] text-xs font-bold uppercase tracking-widest">
+                        OAB/UF 123.456
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-white mb-6 uppercase text-xs tracking-widest">Navegação</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#inicio" class="hover:text-[#C5A47E] transition-custom">Início</a></li>
+                        <li><a href="#atuacao" class="hover:text-[#C5A47E] transition-custom">Áreas de Atuação</a></li>
+                        <li><a href="#sobre" class="hover:text-[#C5A47E] transition-custom">Sobre a Advogada</a></li>
+                        <li><a href="#contato" class="hover:text-[#C5A47E] transition-custom">Agendar Consulta</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-white mb-6 uppercase text-xs tracking-widest">Especialidades</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>Direito Civil</li>
+                        <li>Família e Sucessões</li>
+                        <li>Direito Empresarial</li>
+                        <li>Planejamento Sucessório</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-white mb-6 uppercase text-xs tracking-widest">Sociais</h5>
+                    <div class="flex gap-4 mb-6">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#C5A47E] transition-custom border border-white/10"
+                            aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#C5A47E] transition-custom border border-white/10"
+                            aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs text-gray-500 italic">
+                        Atendimento com sigilo profissional garantido por lei.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+                <p class="text-gray-500 text-xs">
+                    &copy; 2026 Nome Sobrenome Sociedade Individual de Advocacia. Todos os direitos reservados.
+                </p>
+                <div class="flex gap-6 text-xs text-gray-500">
+                    <a href="#" class="hover:text-white transition-custom">Política de Privacidade</a>
+                    <p>Desenvolvido com excelência estratégica.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
